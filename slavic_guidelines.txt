@@ -1,0 +1,67 @@
+Now available at https://docs.google.com/document/d/16msjVu7TKsnWkecy1vgu660a5fGkY9VgS2yZyGWNn3k/edit
+
+Annotation guidelines for Slavic intercomprehension project (experiments with functional MWE)
+SL = source language
+TL = target language
+
+Annotation setup:
+A table with 14 columns
+(['language', 'phrase', 'sentence', 'category', 'gold_translation', 'literal_translation', 'actual_translation',
+'translated_sentence', 'annotation', 'participant_id', 'participant_gender', 'participant_age', 'participant_l1', 'participant_l2'])
+and
+7657 rows, each corresponding to a datapoint from the Slavic intercomprehension experiment.
+
+The annotation column has been automatically populated as follows:
+-- empty: no data was entered (23.44%)
+-- correct: the content of 'actual_translation' and 'gold_translation' match (15.24%)
+-- literal: the content of 'actual_translation' and 'literal_translation' match (3.81%)
+-- noise: the response is shorter than 4 characters or starts with 'ы' or contains substrings ['хз', 'фы'] (7.10%)
+
+Table 1 has the statistics on pre-annotation:
+Table 1. Counts and Ratios of pre-annotated items by category
+  pre-annotated  absolute_frequency percentage
+  empty               1795     23.44%
+  correct             1167     15.24%
+  noise                544      7.10%
+  literal              292      3.81%
+
+Review this automatically generated annotations, especially with regard to 'noise' and adjust if necessary. There can be other types of noisy entries, where it is impossible to make a reasonable judgment about the participant's response.
+
+For the remaining instances, decide between literal, paraphrase and fantasy following the procedure and definitions below and referring to the provided human translation of the entire source sentence to resolve doubts.
+
+*A 'literal' translation* is a translation solution based on the closest structural and/or semantic correspondence in the TL based on the components of the SL item.
+Importantly, the resulting unit is perceived as lacking fluency, without being semantically unacceptable.
+Translated sentences with such solutions are understandable and can be viewed as conveying the original message even if a more natural variant can be suggested.
+The cases of cross-linguistic isomorphism, where a structurally and semantically parallel structure is a good fit for the context and does not generate disfluency cannot be viewed as literal translations and should be annotated as correct.
+(NB! there can be two correct translations in the sample?)
+
+In Example 1, 'переквалифицированы' is a word build after the same derivational pattern as 'overqualified' but has a different meaning ('have unnecessarily high/excessive qualifications' vs 'have changed the professional field').
+Nonetheless, it can be argued that the negative effect of this lexical choice is limited to the lack of fluency. The meaning of the original sentence (especially taking into account a wider context given in square brackets) can be accessed through to the contrastive structure containing the focused word.
+(1) [Millions of people cannot find work, even as sectors from technology to healthcare struggle to fill open positions.] Many who do work feel overqualified or underutilized. [These issues translate into costly wasted potential for the global economy.] -- Mногие работники чувствуют, что они либо переквалифицированы, либо недостаточно используются.
+An alternative fluent translation can be: "Te, у кого есть работа, часто не находят применения своей высокой квалификации / своим знаниям и умениям."
+Unlike its literal counterpart above, the alternative translation is based on a paraphrase, known as semantic modulation in translation theory.
+
+*A 'paraphrase' translation* is an adequate translation solution which does not semantically coinside with the variant shown in the gold_translation column.
+It is typically longer than a true dynamic correspondence and aims at explaining the meaning of the SL item. It refrains from using direct translations of the components of the SL item.
+
+*A 'fantasy' translation* is an unacceptable version, which does not represent the semantics of the source in the TL.
+A typical case is translator's false friends, i.e. word-for-word translations that are triggered by the phonetic or graphic similarity of the items in two languages.
+In the context of the current assignment, a fantasy variant creates a nonsensical/contradictory/misleading statement, which does not faithfully convey the meaning of the source.
+
+Consider the following example:
+(2) 'He had to be the best in whatever he did, but he lost his life in the battlefield, killed by a mine while he was in Vietnam.' ->
+'Он должен был быть лучшим в том, что он делал, но он потерял жизнь на поле битвы, убитый миной, в то время как он был во Вьетнаме.',
+* A structurally similar translation 'должен был быть лучшим' strongly suggests an interpretation incompatible with the meaning in the English source.
+Example 2 is a mistranslation and should be qualified as 'fantasy' instead of just 'literal' translation.
+* 'потерял жизнь' is a literal translation (a more appropriate version is 'погиб'): the meaning of the source is rendered accurately even if in an unexpected way.
+
+The list of annotation categories:
+empty=zero
+noise
+correct
+literal
+paraphrase
+fantasy
+
+Please consider some annotation examples from the data:
+
