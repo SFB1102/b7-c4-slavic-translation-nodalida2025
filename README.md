@@ -2,6 +2,7 @@
 This repo contains outputs and code for the NoDaLiDa-2025 paper: 
 *Predictability of Microsyntactic Units \\across Slavic Languages: A Translation-based Study*.
 
+```angular2html
 @inproceedings{kunilovskaya2025predictability,
 	title={Predictability of Microsyntactic Units across Slavic Languages: A translation-based Study},
 	author={Kunilovskaya, Maria and Zaitova, Iuliia and Xue, Wei and Stenger, Irina and Avgustinova, Tania},
@@ -10,6 +11,9 @@ This repo contains outputs and code for the NoDaLiDa-2025 paper:
 	pages={--}
 	url={}
 }
+```
+
+
 
 ### Research Aims:
 ``assess the level of intelligibility of the five Slavic languages for Russian speakers and to reveal the factors contributing to it``
