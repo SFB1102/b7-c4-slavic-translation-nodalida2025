@@ -3,12 +3,8 @@ data/
 temp/
 logs/
 drafts/
-pics/drafts/
-pics/tables/
-pics/temp/srp/c4s/tables/
+pics/
 res/
-communications/
-
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
