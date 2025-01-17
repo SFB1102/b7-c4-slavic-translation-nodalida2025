@@ -1,6 +1,5 @@
 ### Slavic Intercomprehension
-This repo contains outputs and code for the NoDaLiDa-2025 paper: 
-*Predictability of Microsyntactic Units \\across Slavic Languages: A Translation-based Study*.
+This repo contains outputs and code for the NoDaLiDa-2025 paper:
 
 ```angular2html
 @inproceedings{kunilovskaya2025predictability,
